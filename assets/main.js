@@ -7,34 +7,42 @@
         return{
             new_task:'',
             tasks:[{
-                task_text:   'fare la spesa',
+                text:   'fare la spesa',
                 done: 'false'
             },
             {
-                task_text:   'seguire la lezione',
+                text:   'seguire la lezione',
                 done: 'true'
             },
             {
-                task_text:   'palestra',
+                text:   'palestra',
                 done: 'true'
             },
             {
-                task_text:   'meditare',
+                text:   'meditare',
                 done: 'false'
-            },
-            
-
-            ]
+            }]
 
         }
     },
     methods:{
+        done_markup(){
+            if (done === 'true') {
+                
+            } else {
+                
+            }
+        },
         addTask(){
+
+            console.log(this.tasks);
             console.log('Ho cliccato su addTask');
             this.tasks.push(this.new_task)
         }
-    }
+    },
+    
  }) .mount('#app')
+
 // text, una stringa che indica il testo del todo
 // done, un booleano (true/false) che indica se il todo è stato fatto oppure no
 // MILESTONE 1
