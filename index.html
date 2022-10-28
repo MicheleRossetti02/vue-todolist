@@ -19,8 +19,11 @@
         </div>
 
         <ul class="mt-3">
-            <li v-for="task in tasks"> 
-                {{task.task_text}}
+            <li v-for="task in tasks" :class="[task.done]"> 
+                {{task.text}}
+                <i class="fa fa-times-circle" aria-hidden="true" v-on:click="removeTask(index)" >
+
+                </i>
             </li>
         </ul>
     </div>

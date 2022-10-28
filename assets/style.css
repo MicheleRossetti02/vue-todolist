@@ -3,10 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: lightslategray;
+}
 
 #app{
-    
+
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+h1{
+    font-size: 3rem;
+}
+li{
+    font-size: 2rem;
+}
+.true{
+color: rgb(15, 239, 15);
+text-decoration: line-through;
+}
+.false{
+color: red;
+text-decoration: underline;
 }
