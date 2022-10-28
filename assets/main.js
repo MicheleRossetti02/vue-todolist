@@ -6,6 +6,7 @@
     data(){
         return{
             new_task:'',
+            // complete: false
             tasks:[{
                 text:   'fare la spesa',
                 done: 'false'
@@ -32,13 +33,14 @@
             console.log('Ho cliccato su addTask');
             this.tasks.push(this.new_task)
         },
-        removeTask(index){
-            console.log('ho cliccato sulla task con done true:', index);
-            this.tasks.splice(index,1)
+        removeTask(i){
+            console.log('ho cliccato sulla task con done true:', i);
+            this.tasks.splice(i,1)
             // rimuovo elemento fatto dall'array
-            // if (tasks.done == 'true') {
-            //     console.log('ho cliccato sulla task con done true:', index);
-            //     this.tasks.splice(index,1)
+            // if (tasks.done === 'true') {
+                
+            //     console.log('ho cliccato sulla task con done true:', i);
+            //     this.tasks.splice(i,1)
             // } else{
             //     console.log('Non puoi rimuovere la task senza averla finita');
             // }
