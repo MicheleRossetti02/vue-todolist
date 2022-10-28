@@ -5,7 +5,7 @@
  createApp({
     data(){
         return{
-            new_task:'',
+            new_task:[],
             // complete: false
             tasks:[{
                 text:   'fare la spesa',
@@ -32,6 +32,7 @@
             console.log(this.tasks);
             console.log('Ho cliccato su addTask');
             this.tasks.push(this.new_task)
+            
         },
         removeTask(i){
             console.log('ho cliccato sulla task con done true:', i);
